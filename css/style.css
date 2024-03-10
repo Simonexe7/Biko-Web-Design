@@ -1,0 +1,589 @@
+:root {
+    --primary: #FFFFFF;
+    --text-color: #BBBBBB;
+    --secondary: #0B0C0E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'satoshi', Arial;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.btn {
+    margin-top: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+
+.btn-m {
+    margin-top: 30px;
+    width: 250px;
+    font-size: 15px;
+}
+
+.btn-1 {
+    color: var(--primary);
+    background-color: #212121;
+    border: 1px solid #212121;
+}
+
+.btn-1:hover {
+    background-color: var(--secondary);
+}
+
+.btn-2 {
+    color: var(--secondary);
+    background-color: #F1F1F1;
+    border: 1px solid #F1F1F1;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn-2:hover {
+    background-color: var(--text-color);
+    transform: scale(1.1);
+}
+
+.btn-dark {
+    color: var(--primary);
+    background-color: #0B0C0E; 
+    border: 1px solid #0B0C0E;
+    transition: .5s ease;
+}
+
+.btn-dark:hover {
+    background-color: #212121;
+    border: 1px solid #212121;
+    transform: scale(1.1);
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    color: var(--primary);
+    padding: 25px 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar h6, 
+.navbar ul li a {
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--text-color );
+}
+
+.navbar ul li a:hover {
+    color: var(--primary);
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+section .hero {
+    width: 100%;
+    height: 1000px;
+    background-image: url('../img/hero.png');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header .title-container {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.header .title-container h1 {
+    font-size: 120px;
+    font-weight: 400;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.header .description {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header .description p {
+    color: var(--text-color );
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 100px;
+}
+
+.content {
+    width: 100%;
+    height: 1150px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content .spec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+    align-items: center;
+}
+
+.content .spec .spec-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 70px;
+}
+
+.spec-card h2 {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.spec-card p {
+    color: var(--secondary);
+}
+
+.promo {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.promo .text {
+    display: flex;
+    margin-right: 50px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.promo .text h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+
+.promo .image img {
+    width: 600px;
+    height: 600px;
+    border-radius: 500px;
+    margin-left: 50px;
+}
+
+
+.testimoni .hero2 {
+    width: 100%;
+    height: 1000px;
+    background-image: url('../img/hero2.png') ;
+    background-size: 2000px;
+    background-position: right;
+    border-radius: 50px 50px 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero2 .title {
+    padding: 200px 0 70px 0;
+}
+
+.hero2 .title h1 {
+    font-size: 100px;
+    font-weight: 300;
+    color: var(--primary);
+    text-align: center;
+}
+
+.hero2 .text {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero2 .text p {
+    font-size: 18px;
+    color: var(--text-color );
+    text-align: center;
+}
+
+.testimoni .card-container {
+    width: 100%;
+    background-color: #020304;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 -50px 50px #020304;
+    display: grid;
+    grid-template-areas: "card card card";
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.card {
+    width: 370px;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-header .profile {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    justify-content: center;
+}
+
+.card-header .profile h1 {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.profile .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile .rating img {
+    width: 15px;
+    height: 15px;
+    margin: 10px 3px;
+}
+
+.profile .rating h2 {
+    font-size: 17px;
+    color: var(--primary);
+    margin-left: 5px;
+}
+
+
+.card-body p {
+    margin-top: 25px;
+    color: var(--text-color);
+    line-height: 30px;
+}
+
+.card-footer {
+    margin-top: 30px;
+}
+
+.card-footer img {
+    width: 25px;
+    height: 25px;
+}
+
+.spareparts {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 150px 60px;
+}
+
+.spareparts .top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+}
+
+.top .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 110px;
+}
+
+.top .text h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.top .parts-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.top .parts-container .part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid var(--text-color);
+    padding: 5px 30px;
+    width: 270px;
+}
+
+.parts-container .part .title h1 {
+    font-size: 50px;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.parts-container .part .item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.spareparts .bottom {
+    display: grid;
+    grid-template-areas: "img1 img2"
+    "img3 img3";
+    gap: 26px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.bottom img:nth-of-type(1) {
+    grid-area: img1;
+    width: 100%;
+}
+
+.bottom img:nth-of-type(2) {
+    grid-area: img2;
+    width: 100%;
+}
+
+.bottom img:nth-of-type(3) {
+    grid-area: img3;
+    width: 100%;
+}
+
+.faq {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 100px;
+}
+
+.faq .title {
+    font-size: 100px;
+    font-weight: 400;
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-container .faq-item {
+    border-top: 1px solid var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.faq-container .faq-item .left {
+    width: 210px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.faq-item .left .name {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.faq-item .left .icon img{
+    background-color: var(--secondary);
+    border-radius: 25px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+.faq-item p {
+    width: 50%;
+}
+
+.hero3 {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 100px;
+}
+
+.hero3 img {
+    width: 100%;
+}
+
+.packaging {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 0 60px;
+
+}
+
+.packaging .top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top-container .description {
+    border-right: 1px solid var(--text-color);
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    width: 500px;
+    justify-content: center;
+}
+
+.top-container .description .col {
+    margin-right: 30px;
+}
+
+.top-container .description .col .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top-container .description .col .name img {
+    width: 15px;
+    height: 15px;
+}
+
+.top-container .description:nth-child(2) .col:first-child .name img {
+    transform: rotate(90deg);
+}
+
+.top-container .description .col .name h4 {
+    color: var(--secondary);
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.top-container .description .col h2{
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.packaging .content {
+    width: 700px;
+    height: 320px;
+    margin: 150px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.packaging .content h1 {
+    font-size: 100px;
+    color: var(--secondary);
+    font-weight: 400;
+    text-align: center;
+}
+
+.packaging .content .button {
+    display: flex;
+    flex-direction: row;
+}
+
+.packaging .content .button button {
+    margin-right: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+footer .container {
+    width: 100%;
+    background-color: #F1F1F1;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    margin-bottom: 50px;
+}
+
+footer .container:first-child {
+    height: 420px;
+}
+
+footer .container .logo {
+    font-size: 50px;
+    color: var(--secondary);
+    font-weight: bolder;
+}
+
+footer .container .nav {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .container .nav .col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    line-height: 40px;
+}
+
+footer .container .nav .col a,
+footer .container h4 {
+    color: #59607C;
+    font-weight: 500;
+}
+
+footer .container .nav .col a:hover {
+    color: #000;
+}
+
+footer .container:last-of-type {
+    padding: 40px 60px;
+}
